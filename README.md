@@ -1,4 +1,4 @@
-# VN Market Support Screener (V4.2)
+# VN Market Support Screener
 
 ## Overview
 The VN Market Support Screener is a quantitative filtering engine built for the Vietnamese stock market (HOSE/HNX). Originally designed as a personal terminal tool in 2025 to eliminate the noise of manual charting, it has been scaled into a Streamlit web application. 
@@ -25,7 +25,7 @@ Instead of cherry-picking a specific bull run, the engine runs a **Blind 50-Day 
 1. Fetches historical data (2022-Present) for a basket of 50 major VN30 and mid-cap tickers.
 2. Selects **50 random historical dates** from the dataset.
 3. For each date, it slices the dataframe to simulate being completely blind to the future (T+0).
-4. Applies the strict V4.2 screener logic to see which tickers would have triggered a signal on that exact day.
+4. Applies the strict screener logic to see which tickers would have triggered a signal on that exact day.
 5. Evaluates the actual future data (T+20). 
 
 **Win Condition:**
